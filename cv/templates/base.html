@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="{% static 'pages/navbar.css' %}"/>
+    <meta charset="UTF-8">
+    <title>{% block title %}Patrick Shannon's Curriculum Vitae{% endblock %}</title>
+</head>
+<body>
+{% block navbar %}
+<div id="navbar">
+        <span id="navbar-name">Patrick Shannon  </span>
+        <span id="navbar-section-title">Curriculum Vitae</span>
+        <a href="{% url 'references' %}">References</a>
+        <a href="{% url 'interests' %}">Interests</a>
+        <a href="{% url 'experience' %}">Experience</a>
+        <a href="{% url 'skills' %}">Skills</a>
+        <a href="{% url 'home' %}">Bio</a>
+        <!--In reverse order from how they appear on the page-->
+    </div>
+    <div id="top-spacer"></div> <!-- Used to keep any elements from being hidden under the navbar-->
+{% endblock navbar %}
+
+{% block content %}
+{#    Page content goes here. Nothing in this file, of course. #}
+{% endblock content %}
+
+{% block copyright_info %}
+{#    TODO: Place copyright info here.#}
+{% endblock copyright_info %}
+</body>
+</html>

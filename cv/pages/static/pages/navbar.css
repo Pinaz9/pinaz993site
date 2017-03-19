@@ -1,0 +1,58 @@
+#navbar{
+    background-color: #e6e6e6;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 0;
+    display: block;
+}
+
+#navbar-name{
+    font-family: 'Quicksand', sans-serif;;
+    color: #000000;
+    font-size: 36px;
+}
+
+#navbar-section-title {
+    font-family: 'Quicksand', sans-serif;
+    color: #a0a0a0;
+    font-size: 30px;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #808080;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+
+    -webkit-transition-duration: .25s;
+    -moz-transition-duration: .25s;
+    -ms-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 8px;
+    float: right
+}
+#navbar a:hover{
+    color: #303030;
+    font-size: 36px;
+    margin-top:0;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+#top-spacer {
+    /*Used to make sure that elements near the top are not hidden under the navbar.*/
+    height: 40px;
+    width: 100%;
+    display: block;
+    background-color: #ff000000;
+}
