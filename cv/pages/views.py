@@ -23,4 +23,4 @@ class SkillsView(TemplateView):
 
 
 class BioView(TemplateView):
-    template_name = "home.html"
+    template_name = "bio.html"

@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^interests/?$', pages.views.InterestView.as_view(), name='interests'),
     url(r'^experience/?$', pages.views.ExperienceView.as_view(), name='experience'),
     url(r'^skills/?$', pages.views.SkillsView.as_view(), name='skills'),
-    url(r'^bio/?$', pages.views.BioView.as_view(), name='home'),
+    url(r'^bio/?$', pages.views.BioView.as_view(), name='bio'),
     url(r'^.*$', RedirectView.as_view(pattern_name="home"), name="go_home"),  # As in: "Go home browser, you're drunk."
     url(r'^admin/', admin.site.urls),
 ]
