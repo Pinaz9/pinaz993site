@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'xyf3%o+ftc$(+wrb#q_ox_cvt0q56^&%xv2=g+_h7n^p*tf+9u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -139,7 +139,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-STATIC_URL = '/static/'
+STATIC_URL = 'http://storage.googleapis.com/cv-storage/static/'
 
 STATICFILE_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',

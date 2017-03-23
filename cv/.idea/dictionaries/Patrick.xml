@@ -3,8 +3,10 @@
     <words>
       <w>backends</w>
       <w>cloudsql</w>
+      <w>gunicorn</w>
       <w>howto</w>
       <w>lconf</w>
+      <w>mysqlclient</w>
       <w>signhere</w>
       <w>sqlite</w>
       <w>startproject</w>
