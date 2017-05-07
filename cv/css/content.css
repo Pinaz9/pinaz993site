@@ -1,0 +1,17 @@
+#content {
+    font-size: 16px;
+    font-family: 'Montserrat', serif;
+    width: 60%;
+    margin:auto;
+}
+
+#content h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+#content a{
+    text-decoration: none;
+    color: #000050;
+    font-weight: 600;
+}
