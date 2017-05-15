@@ -61,7 +61,4 @@
 #top-spacer {
     /*Used to make sure that elements near the top are not hidden under the navbar.*/
     height: 40px;
-    width: 100%;
-    display: block;
-    background-color: #ff000000;
 }
