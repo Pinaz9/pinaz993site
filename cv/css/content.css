@@ -20,3 +20,8 @@
     color: #000050;
     font-weight: 600;
 }
+
+#age-in-years {
+    text-decoration-color: #000655;
+    text-decoration: underline;
+}

@@ -9,9 +9,23 @@
     <meta charset="UTF-8">
     <title>Biography | Patrick Shannon's Curriculum Vitae</title>
 
+    <script src="js/moment.js"></script>
     <script>
         $(document).ready(function(){
-            // This is where you load the things and the stuff.
+            // Calculate the exact amount of years, months and days since I was born.
+            var dob = moment([1993, 9, 9]);
+            var years = moment().diff(dob, 'years');
+            dob.add(years, 'years');
+            var months = moment().diff(dob, 'months');
+            dob.add(months, 'months');
+            var days = moment().diff(dob, 'days');
+            var ageField = $('#age-in-years');
+            ageField.text(years + ' years of age');
+            var titleText = years.toString().concat(' years, ', months, ' months, and ', days, ' days to be precise.');
+            ageField.prop('title', titleText);
+
+            // Import paragraphs.
+
         })
     </script>
 </head>
@@ -32,6 +46,7 @@
 
     <div id="content">
     This is the Bio page.
+        Age in Years: <span id="age-in-years" title=""></span>
     </div>
 
     <!--TODO: Insert relevant 'Bio' content-->
