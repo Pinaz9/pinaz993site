@@ -11,7 +11,16 @@
 
     <script src="js/moment.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
+            // Import paragraphs.
+            $.get('./text/biography.html', function (data) {
+                $('#biography').html(data);
+            }, 'text');
+            $('#future').load('./text/future.html');
+        });
+
+        $(document).ajaxComplete( function () {
+            /**Created by Patrick on 5/17/2017.*/
             // Calculate the exact amount of years, months and days since I was born.
             var dob = moment([1993, 9, 9]);
             var years = moment().diff(dob, 'years');
@@ -21,12 +30,10 @@
             var days = moment().diff(dob, 'days');
             var ageField = $('#age-in-years');
             ageField.text(years + ' years of age');
-            var titleText = years.toString().concat(' years, ', months, ' months, and ', days, ' days to be precise.');
+            var titleText = years.toString().concat(' years, ', months, ' months, and ', days, ' days, to be precise.');
             ageField.prop('title', titleText);
+        });
 
-            // Import paragraphs.
-
-        })
     </script>
 </head>
 
@@ -45,8 +52,10 @@
     <div id="top-spacer"></div> <!-- Used to keep any elements from being hidden under the navbar-->
 
     <div id="content">
-    This is the Bio page.
-        Age in Years: <span id="age-in-years" title=""></span>
+        <h2>Biography</h2>
+        <span id="biography"></span>
+        <h2>Future Plans</h2>
+        <span id="future"></span>
     </div>
 
     <!--TODO: Insert relevant 'Bio' content-->
