@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="db381cbf-120e-463d-bcf7-07729f1f3ccb" name="gcloud-cv.pinaz993.net" url="http://cv.pinaz993.net">
+        <fileTransfer port="0" mountedRoot="C:\Users\Patrick\Documents\GitHub\pinaz993site\deployed\cv" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

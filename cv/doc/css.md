@@ -45,7 +45,7 @@ Several base styles are included that build upon `Normalize.css`. These
 styles:
 
 * provide basic typography settings that improve text readability
-* protect against unwanted `text-shadow` during text highlighting
+* protect against unwanted `ajax-shadow` during text highlighting
 * tweak the default alignment of some elements (e.g.: `img`, `video`,
   `fieldset`, `textarea`)
 * style the prompt that is displayed to users using an outdated browser
@@ -130,7 +130,7 @@ process, as well as make the printed pages easier to read.
 At printing time, these styles will:
 
 * strip all background colors, change the font color to black, and remove the
-  `text-shadow` — done in order to [help save printer ink and speed up the
+  `ajax-shadow` — done in order to [help save printer ink and speed up the
   printing process](http://www.sanbeiji.com/archives/953)
 * underline and expand links to include the URL — done in order to allow users
   to know where to refer to<br>

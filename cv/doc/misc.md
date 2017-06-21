@@ -92,7 +92,7 @@ In the repo the `.htaccess` is used for:
 * CORS header for images when browsers request it
 * Enable `404.html` as 404 error document
 * Making the website experience better for IE users better
-* Media UTF-8 as character encoding for `text/html` and `text/plain`
+* Media UTF-8 as character encoding for `ajax/html` and `ajax/plain`
 * Enabling the rewrite URLs engine
 * Forcing or removing the `www.` at the begin of a URL
 * It blocks access to directories without a default document

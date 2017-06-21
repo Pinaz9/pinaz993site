@@ -13,10 +13,11 @@
     <script>
         $(document).ready(function() {
             // Import paragraphs.
-            $.get('./text/biography.html', function (data) {
-                $('#biography').html(data);
+            $.get('./ajax/biography.html', function (data) {
+                $('#biography-text').html(data);
             }, 'text');
-            $('#future').load('./text/future.html');
+            $('#future-text').load('./ajax/future.html');
+            $('#contact-text').load('./ajax/contact.html');
         });
 
         $(document).ajaxComplete( function () {
@@ -39,26 +40,26 @@
 
 <body>
     <div id="navbar">
-        <a href="home.html" id="navbar-name">Patrick Shannon</a>
+        <a href="home-page.html" id="navbar-name">Patrick Shannon</a>
         <span id="navbar-section-title">Curriculum Vitae</span>
         <div style="flex-grow: 1"></div>
         <!--If a link refers to the current page, set id to navbar-inactive-->
-        <a id="navbar-inactive" class=navbar-link href="bio.html">Bio</a>
-        <a class=navbar-link href="skills.html">Skills</a>
+        <a id="navbar-inactive" class=navbar-link href="bio-page.html">Bio</a>
+        <a class=navbar-link href="skills-page.html">Skills</a>
         <a class=navbar-link href="experience.html">Experience</a>
-        <a class=navbar-link href="interests.html">Interests</a>
-        <a class=navbar-link href="references.html">References</a>
+        <a class=navbar-link href="interests-page.html">Interests</a>
+        <a class=navbar-link href="references-page.html">References</a>
     </div>
     <div id="top-spacer"></div> <!-- Used to keep any elements from being hidden under the navbar-->
 
     <div id="content">
         <h2>Biography</h2>
-        <span id="biography"></span>
+        <span id="biography-text"></span>
         <h2>Future Plans</h2>
-        <span id="future"></span>
+        <span id="future-text"></span>
+        <h2>Contact Info</h2>
+        <span id="contact-text"></span>
     </div>
-
-    <!--TODO: Insert relevant 'Bio' content-->
 
     <!--TODO: Place copyright info here.-->
 </body>
