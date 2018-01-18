@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/navbar.css"/>
-    <link type="text/css" rel="stylesheet" href="css/main.css"/>
-    <link type="text/css" rel="stylesheet" href="css/content.css"/>
+    <link href="css/blrb.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Patrick Shannon's Curriculum Vitae</title>
 
     <script>
-        $(document).ready(function(){
-            $('#welcome-text').load('./ajax/welcome.html');
-            $('#about-text').load('./ajax/about.html');
-        })
     </script>
 </head>
 
-<body>
-    <div id="navbar">
-        <a href="home-page.html" id="navbar-name">Patrick Shannon</a>
-        <span id="navbar-section-title">Curriculum Vitae</span>
-        <div style="flex-grow: 1"></div>
-        <!--If a link refers to the current page, set id to navbar-inactive-->
-        <a class=navbar-link href="bio-page.html">Bio</a>
-        <a class=navbar-link href="skills-page.html">Skills</a>
-        <a class=navbar-link href="experience.html">Experience</a>
-        <a class=navbar-link href="interests-page.html">Interests</a>
-        <a class=navbar-link href="references-page.html">References</a>
-    </div>
-    <div id="top-spacer"></div> <!-- Used to keep any elements from being hidden under the navbar-->
+<body data-spy="scroll" data-target=".nav-bar">
+    <nav class="navbar navbar-default navbar-sticky-top" role="navigation">
+        <a class="navbar-brand" href="#">Patrick Shannon's <small>Curriculum Vitae</small></a>
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#references">References</a>
+            </li>
+        </ul>
+    </nav>
 
-    <div id="content">
-        <h2>Welcome</h2>
-        <span id="welcome-text"></span>
-        <h2>About This Website</h2>
-        <span id="about-text"></span>
+    <div id="about-me">
+        <h2>About Me</h2>
+        <div id="welcome" class="container col-sm-6">
+            <h3 class="blrb-text">
+                My name is Patrick Shannon, and I’m a graduate of Zane State College looking for a career in
+                Information Technology.
+            </h3>
+        </div>
+
+        <div id="skills" class="container col-sm-6">
+            <h3 class="blrb-text">
+                I have experience in customer service, programming, web development, and technical support.
+                I also have training in Cisco networking; network design, implementation and maintenance;
+                and computer maintenance and repair.
+            </h3>
+        </div>
+
+        <div id="troubleshooting" class="container col-sm-6">
+            <h3 class="blrb-text">
+                Troubleshooting is a skill I have proudly honed over the years. Having honed this skill, I am able to
+                use it to solve complex problems with simple or complex solutions. From gathering information all the
+                way to documenting the problem and solution, I take pride this aspect of my work.
+            </h3>
+        </div>
+
+        <div id="support" class="container col-sm-6">
+            <h3 class="blrb-text">
+                My extensive technical support experience has allowed me to develop interpersonal skills when providing said
+                support. These skills include active listening, patience, asking both open and closed ended questions, and
+               effective communication.
+            </h3>
+        </div>
+
+        <div id="understanding" class="container col-sm-6">
+            <h3 class="blrb-text">
+                Understanding complex systems comes easy to me. Once I gather information and use it to form a mental
+            picture of the system, I can use that picture to navigate my way through to the source of a problem or
+                inefficiency.
+            </h3>
+        </div>
+
+        <div id="contact" class="container col-sm-6">
+            <h3 class="blrb-text">
+                If you wish to contact me, please email me at pinaz993@gmail.com.
+            </h3>
+        </div>
+    </div>
+
+    <div id="education">
 
     </div>
-    <!--TODO: Place copyright info here.-->
+
+    <div id="experience">
+
+    </div>
+
+    <div id="references">
+
+    </div>
 </body>
 </html>
