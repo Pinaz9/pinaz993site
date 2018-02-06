@@ -1,15 +1,19 @@
 .blrb-container {
-
+    margin-bottom: 45px;
 }
 
 .blrb-text{
-text-align: center;
+    text-align: center;
+    font-family: 'Montserrat', serif;
 }
 
 .blrb-img{
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
 }
 
-.blrb-headding{
+.blrb-heading{
 
 }
