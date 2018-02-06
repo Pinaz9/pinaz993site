@@ -1,5 +1,6 @@
 .blrb-container {
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+    max-width: 450px;
 }
 
 .blrb-text{
@@ -16,4 +17,8 @@
 
 .blrb-heading{
 
+}
+
+.blrb-master{
+    max-width: 85%;
 }
