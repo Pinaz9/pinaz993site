@@ -1,4 +1,11 @@
-.navbar-collapse > ul > li {
-    margin-left: 5px;
-    margin-right: 5px;
+.navbar-brand > small {
+    color: lightgray;
+}
+
+.navbar-link{
+    transition-duration: 500ms;
+}
+
+nav {
+    background: darkgray;
 }

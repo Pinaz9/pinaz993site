@@ -1,0 +1,16 @@
+body{
+    position: relative;
+}
+
+.section-header{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.school-name,
+.company-name {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}

@@ -2,16 +2,13 @@
 <html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="css/blrb.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/misc.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Patrick Shannon's Curriculum Vitae</title>
@@ -20,90 +17,127 @@
     </script>
 </head>
 
-<body data-spy="scroll" data-target=".nav-bar">
-    <nav class="navbar navbar-light navbar-sticky-top navbar-expand-md" role="navigation">
+<body data-spy="scroll" data-target="#navbar-list" data-offset="40">
+
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md" role="navigation">
         <div class="container-fluid">
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-list"
                     aria-expanded="false" aria-controls="navbar-list">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Patrick Shannon<small>CV</small></a>
+            <a class="navbar-brand qs-text" href="#">Patrick Shannon <small>CV</small></a>
             <div class="navbar-collapse collapse" id="navbar-list">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#about-me">About Me</a></li>
-                    <li role="presentation"><a href="#education">Education</a></li>
-                    <li role="presentation"><a href="#experience">Experience</a></li>
-                    <li role="presentation"><a href="#references">References</a></li>
-                </ul>
+                <div class="nav navbar-nav">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#references">References</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div id="about-me">
-        <h2 style="text-align: center">About Me</h2>
-        <div id="welcome" class="container col-sm-6 blrb-container">
-            <img class="blrb-img" src="img/ic_perm_identity_black_24px.svg" alt="About Me"/>
-            <h4 class="blrb-text">
-                My name is Patrick Shannon, and I’m a graduate of Zane State College looking for a career in
-                Information Technology.
-            </h4>
-        </div>
+    <div id="about-me" class="container">
+        <h2 class="section-header" style="text-align: center">About Me</h2>
 
-        <div id="technical-skills" class="container col-sm-6 blrb-container">
-            <img class="blrb-img" src="img/ic_build_black_24px.svg" alt="My Technical Skills"/>
-            <h4 class="blrb-text">
-                I have experience in customer service, programming, web development, and technical support.
-                I also have training in Cisco networking; network design, implementation and maintenance;
-                and computer maintenance and repair.
-            </h4>
-        </div>
+        <div class="row justify-content-center" style="margin-left: auto; margin-right: auto">
 
-        <div id="troubleshooting" class="container col-sm-6 blrb-container">
+            <div id="welcome" class="col-12 col-lg-4 col-md-6 blrb-container">
+                <img class="blrb-img" src="img/ic_perm_identity_black_24px.svg" alt="About Me"/>
+                <p class="blrb-text">
+                    My name is Patrick Shannon, and I’m a graduate of Zane State College looking for a career in
+                    Information Technology.
+                </p>
+            </div>
+
+            <div id="technical-skills" class="col-12 col-lg-4 col-md-6 blrb-container">
+                <img class="blrb-img" src="img/ic_build_black_24px.svg" alt="My Technical Skills"/>
+                <p class="blrb-text">
+                    I have experience in customer service, programming, web development, and technical support.
+                    I also have training in Cisco networking; network design, implementation and maintenance;
+                    and computer maintenance and repair.
+                </p>
+            </div>
+
+            <div id="troubleshooting" class="col-12 col-lg-4 col-md-6 blrb-container">
             <img class="blrb-img" src="img/ic_important_devices_black_24px.svg" alt="Troubleshooting"/>
-            <h4 class="blrb-text">
+            <p class="blrb-text">
                 Troubleshooting is a skill I have proudly honed over the years. Thus, I am able to
                 use it to solve complex problems with simple or complex solutions. From gathering information all the
                 way to documenting the problem and solution, I take pride this aspect of my work.
-            </h4>
-        </div>
+            </p>
+            </div>
 
-        <div id="support" class="container col-sm-6 blrb-container">
-            <img class="blrb-img" src="img/ic_live_help_black_24px.svg" alt="Support"/>
-            <h4 class="blrb-text">
-                My extensive technical support experience has allowed me to develop interpersonal skills when providing said
-                support. These skills include active listening, patience, asking both open and closed ended questions, and
-               effective communication.
-            </h4>
-        </div>
+            <div id="support" class="col-12 col-lg-4 col-md-6 blrb-container">
+                <img class="blrb-img" src="img/ic_live_help_black_24px.svg" alt="Support"/>
+                <p class="blrb-text">
+                    My extensive technical support experience has allowed me to develop interpersonal skills when providing said
+                    support. These skills include active listening, patience, asking both open and closed ended questions, and
+                   effective communication.
+                </p>
+            </div>
 
-        <div id="understanding" class="container col-sm-6 blrb-container">
-            <img class="blrb-img" src="img/git-merge.svg" alt="Understanding"/>
-            <h4 class="blrb-text">
-                Understanding complex systems comes easy to me. Once I gather information and use it to form a mental
-            picture of the system, I can use that picture to navigate my way through to the source of a problem or
-                inefficiency.
-            </h4>
-        </div>
+            <div id="understanding" class="col-12 col-lg-4 col-md-6 blrb-container">
+                <img class="blrb-img" src="img/git-merge.svg" alt="Understanding"/>
+                <p class="blrb-text">
+                    Understanding complex systems comes easy to me. Once I gather information and use it to form a mental
+                picture of the system, I can use that picture to navigate my way through to the source of a problem or
+                    inefficiency.
+                </p>
+            </div>
 
-        <div id="contact" class="container col-sm-6 blrb-container">
-            <img class="blrb-img" src="img/ic_contact_mail_black_24px.svg" alt="Contact Me"/>
-            <h4 class="blrb-text">
-                If you wish to contact me, please email me at pinaz993@gmail.com, with the word 'CV' somewhere in the
-                subject line.
-            </h4>
+            <div id="contact" class="col-12 col-lg-4 col-md-6 blrb-container">
+                <img class="blrb-img" src="img/ic_contact_mail_black_24px.svg" alt="Contact Me"/>
+                <p class="blrb-text">
+                    If you wish to contact me, please email me at pinaz993@gmail.com, with the word 'CV' somewhere in the
+                    subject line.
+                </p>
+            </div>
         </div>
+        <hr/>
     </div>
 
-    <div id="education">
+    <div id="education" class="container">
+        <h2 class="section-header" style="text-align: center">Education</h2>
 
+        <div class="row justify-content-center">
+
+            <div id="high-school" class="col-lg-6 col-12">
+                <h3 class="school-name">Maysville High School</h3>
+
+            </div>
+
+            <div id="technical" class="col-lg-6 col-12">
+                <h3 class="school-name">Mid-East Career and Technical Centers</h3>
+            </div>
+
+            <div id="college" class="col-lg-6 col-12">
+                <h3 class="school-name">Zane State College</h3>
+            </div>
+
+        </div><!--End row-->
+        <hr/>
     </div>
 
-    <div id="experience">
+    <div id="experience" class="container">
+        <h2 class="section-header">Experience</h2>
 
+        <div class="row justify-content-center">
+
+            <div id="job-walmart" class="col-lg-6 col-12">
+                <h3 class="company-name">WalMart #2209</h3>
+            </div>
+
+            <div id="job-zanestate-support" class="col-lg-6 col-12">
+                <h3 class="company-name">Zane State College Technical Solutions Center</h3>
+            </div>
+
+        </div><!--End row-->
+        <hr/>
     </div>
 
-    <div id="references">
-
+    <div id="references" class="container">
+        <h2 class="section-header"
     </div>
 </body>
 </html>
