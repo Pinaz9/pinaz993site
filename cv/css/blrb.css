@@ -1,6 +1,9 @@
 .blrb-container {
-    margin-bottom: 15px;
+    padding: 12px;
     max-width: 450px;
+    background: #ffffff99;
+    background-clip: content-box;
+    border-radius: 24px;
 }
 
 .blrb-text{
