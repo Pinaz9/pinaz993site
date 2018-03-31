@@ -1,11 +1,8 @@
-.navbar-brand > small {
-    color: lightgray;
-}
-
 .navbar-link{
     transition-duration: 500ms;
 }
 
-nav {
-    background: darkgray;
+.navbar {
+    height: 50px;
+    padding: 0;
 }

@@ -9,13 +9,45 @@ body{
     padding-bottom: 25px;
 }
 
+.accomplishment-name,
 .school-name,
 .company-name {
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
+}
+
+.accomplishment-year,
+.school-location,
+.company-location {
+    font-size: large;
+}
+
+.position,
+.field-of-study {
+    margin-bottom: 0;
+}
+
+.education-status,
+.excuse {
+    font-size: smaller;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.date-range {
+    font-size: smaller;
 }
 
 .school-location,
 .company-location {
+    margin-bottom: 0;
+}
+
+#high-school {
+    visibility: collapse;
+}
+
+object[type="image/svg+xml"] {
 
 }
+
+

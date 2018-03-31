@@ -1,7 +1,6 @@
 .blrb-container {
     padding: 12px;
     max-width: 450px;
-    background: #ffffff99;
     background-clip: content-box;
     border-radius: 24px;
 }
@@ -11,7 +10,8 @@
     font-family: 'Montserrat', serif;
 }
 
-.blrb-img{
+#git-merge,
+.blrb-svg{
     display: block;
     margin-left: auto;
     margin-right: auto;
